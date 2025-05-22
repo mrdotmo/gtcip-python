@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 setup(
     name="leetcode-solutions",
@@ -13,6 +13,7 @@ setup(
     # Development dependencies grouped in "dev" extra
     extras_require={
         "dev": [
+            "isort >= 6.0.1",
             "pytest>=8.3.5",
             "pytest-cov>=6.1.1",
             "ruff>=0.11.1",

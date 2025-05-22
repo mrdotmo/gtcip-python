@@ -8,7 +8,7 @@ python_files = "test_*.py"
 
 [tool.ruff]
 # Basic configuration
-line-length = 88
+line-length = 90
 target-version = "py313"
 include = ["*.py", "*.pyi"]
 
