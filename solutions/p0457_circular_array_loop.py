@@ -7,6 +7,7 @@ class Solution:
         LeetCode Problem 457: Circular Array Loop
         https://leetcode.com/problems/circular-array-loop/
         """
+
         def next_index(i: int) -> int:
             return (i + nums[i]) % len(nums)
 
@@ -19,7 +20,6 @@ class Solution:
             while nums[slow] * nums[fast] > 0 and nums[slow] * nums[next_index(fast)] > 0:
                 if slow == fast:
                     if slow != next_index(fast):
-                        breakpoint()
                         return True
                     break
                 slow = next_index(slow)
