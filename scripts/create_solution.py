@@ -9,7 +9,7 @@ def create_files(*, problem_number, function_name, problem_url):
     problem_number_str = str(problem_number).zfill(4)
 
     # Create the file name: e.g. p0001_two_sum.py
-    file_base = f"p{problem_number_str}_{problem_name}"
+    file_base = f"p{problem_number_str}_{problem_name.lower()}"
 
     # Create the solution file
     solution_content = f"""class Solution:
