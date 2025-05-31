@@ -21,11 +21,12 @@ class Solution:
             if not fast or not fast.next:
                 return None
             fast = fast.next.next
-            if slow == fast:
+            if slow is fast:
                 break
         slow = head
-        while slow != fast:
+        while slow is not fast:
             if slow:
                 slow = slow.next
             if fast:
                 fast = fast.next
+        return slow
